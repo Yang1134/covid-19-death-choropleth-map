@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <script src="./vega.js"></script>
+  <script src="./vegalite.js"></script>
+  <script src="./vegaembed.js"></script>
+  
+</head>
+<body>
+
+<div id="choropleth_map"></div>
+
+<script type="text/javascript">
+
+  var spec2 = "choropleth_map.vg.json";
+  vegaEmbed('#choropleth_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+  
+
+</body>
+</html>
